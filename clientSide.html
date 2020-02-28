@@ -1,0 +1,24 @@
+<script>
+
+//Funzione per scrivere il codice JS lato client
+
+  document.getElementById("btn").addEventListener("click", doStuff);
+  
+  function doStuff(){
+  
+  var dataContainer = {};
+  
+  dataContainer.fn = document.getElementById("fn").value;
+          dataContainer.ln = document.getElementById("ln").value;
+          dataContainer.ls = document.getElementById("lista").value;
+          
+          google.script.run.userClicked(dataContainer);
+          
+          document.getElementById("fn").value = "";
+          document.getElementById("ln").value = "";
+          document.getElementById("lista").value = "";
+          console.log("Click");
+          
+          }
+       
+</script>

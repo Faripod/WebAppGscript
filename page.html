@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+    <?!= include("page-css");?>
+  </head>
+  <body>
+    
+    <h1>TEST</h1>
+    <div class="form-row">
+       <label>First name:</label><input type="text" id="fn">
+    </div>
+    <div class="form-row">
+       <label>Last name:</label><input type="text" id="ln">
+    </div>
+    <div class="form-row">
+       <label>Liste:</label>
+       <select id="lista">
+          <option>Google sheet</option>
+          <option>Test</option>
+          <option>cose</option>
+       </select>
+    </div>
+    <div class="form-row">
+       <button id="btn">Bottone generico</button>
+    </div>
+    
+    
+    <?!= include("clientSide");?>
+  </body>
+</html>
+
+
